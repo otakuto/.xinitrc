@@ -6,9 +6,9 @@ rm .serverauth.*
 ibus-daemon -dx &
 urxvtd -f -o -q
 
-xmodmap .Xmodmap
+xmodmap .xmodmap
 xsetroot -cursor_name left_ptr
 xset r rate 250 32
-xrdb -merge .Xresources
+xrdb -merge .xresources
 
 xmonad
