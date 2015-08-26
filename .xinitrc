@@ -1,14 +1,13 @@
-export XMODIFIERS="@im=ibus"
-export XMODIFIER="@im=ibus"
-export GTK_IM_MODULE=ibus
-export QT_IM_MODULE=ibus
+export XMODIFIERS="@im=fcitx"
+export XMODIFIER="@im=fcitx"
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
 rm ~/.serverauth.*
-ibus-daemon -dx &
+fcitx
 urxvtd -f -o -q
 
 xmodmap ~/.xmodmap
 xsetroot -cursor_name left_ptr
 xset r rate 200 40
 xrdb -merge ~/.xresources
-
 xmonad
