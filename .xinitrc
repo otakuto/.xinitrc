@@ -6,8 +6,8 @@ rm ~/.serverauth.*
 fcitx
 urxvtd -f -o -q
 
-xmodmap ~/.xmodmap
 xsetroot -cursor_name left_ptr
 xset r rate 200 40
 xrdb -merge ~/.xresources
+sleep 1; xmodmap $HOME/.xmodmap
 xmonad
